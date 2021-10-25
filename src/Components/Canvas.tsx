@@ -26,6 +26,7 @@ function Canvas() {
 				<meta name="keywords" content="Milanote, note, notes" />
 			</Helmet>
 
+			<p className={styles.centerIndicator}></p>
 		</div>
 	);
 }

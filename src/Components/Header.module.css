@@ -31,14 +31,16 @@
 .link.big-text {
 	text-decoration: none;
 	color: #84c8ca;
-	font-size: calc(10px + 3vw);
+	font-size: calc(var(--grid-size) * 1.5);
+	line-height: calc(var(--grid-size) * 3);
 
 	width: 75%;
 }
 .link-active.big-text {
 	text-decoration: none;
 	color: #98e8eb;
-	font-size: calc(10px + 3vw);
+	font-size: calc(var(--grid-size) * 1.5);
+	line-height: calc(var(--grid-size) * 3);
 
 	width: 75%;
 }
