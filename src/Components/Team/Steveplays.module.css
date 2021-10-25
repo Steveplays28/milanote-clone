@@ -1,0 +1,85 @@
+.row-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+
+	/* position: absolute;
+	margin: 0;
+	top: 50%;
+	transform: translateY(-50%); */
+
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.about-text {
+	float: left;
+	width: 50%;
+}
+.about-image {
+	height: auto;
+	width: auto;
+	max-height: 24%;
+	max-width: 24%;
+
+	float: right;
+	padding-right: 5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.readMoreButton {
+	background-color: #282c34;
+	white-space: pre;
+
+	will-change: transform, letter-spacing;
+	transform: scale(1);
+	letter-spacing: normal;
+	transition: all 0.5s ease-in-out;
+}
+.readMoreButton:hover {
+	background-color: #282c34;
+	white-space: pre;
+
+	will-change: transform, letter-spacing;
+	transform: scale(1.5);
+	letter-spacing: 0.25vw;
+	transition: all 0.5s ease-in-out;
+}
+
+.readMoreButton a {
+	color: #84c8ca;
+	text-decoration: none;
+}
+.readMoreButton a:hover {
+	color: #98e8eb;
+	text-decoration: none;
+}
+
+.meetTheTeam {
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+.meetTheTeamText {
+	font-size: calc(10px + 5vw);
+
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.meetTheTeamProfileIcons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.teamIcon {	
+	width: 256px;
+	height: 256px;
+
+	margin-left: 2vw;
+	margin-right: 2vw;
+
+	border: 5px solid #282c34;
+	border-radius: 50%;
+}

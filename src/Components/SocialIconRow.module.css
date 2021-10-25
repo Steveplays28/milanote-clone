@@ -1,0 +1,25 @@
+.socialIconRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.socialIcon {
+	width: auto;
+	height: auto;
+	max-width: auto;
+	max-height: 3em;
+
+	vertical-align: middle;
+
+	padding-left: 0.25vw;
+	padding-right: 0.25vw;
+
+	pointer-events: none;
+}
+.discordIcon {
+	border-radius: 50%;
+}
+.itchIcon {
+	border-radius: 25%;
+}

@@ -1,0 +1,47 @@
+.bannerImage {
+	width: 100%;
+
+	margin-top: -15%;
+}
+.aboutButtons {
+	width: 25%;
+
+	margin-top: -15%;
+}
+
+.row-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.about-text {
+	float: left;
+	width: 50%;
+}
+.about-image {
+	height: auto;
+	width: auto;
+	max-height: 24%;
+	max-width: 24%;
+
+	float: right;
+	padding-right: 5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.socials {
+	width: 75%;
+}
+
+.games {
+	width: 75%;
+
+	margin-top: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+}

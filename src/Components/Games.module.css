@@ -1,0 +1,102 @@
+.games-text {
+	width: 70%;
+
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	width: 80%;
+
+	padding: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	vertical-align: center;
+}
+.game-text {
+	width: 75%;
+}
+.game-title {
+	font-size: calc(10px + 5vw);
+
+	margin-top: 7vh;
+	margin-bottom: 0px;
+}
+
+.game-image {
+	width: 512px;
+	height: 288px;
+
+	border-radius: 10px;
+
+	transition: all 0.25s ease-in-out;
+}
+.game-image:hover {
+	transform: scale(1.05);
+
+	transition: all 0.25s ease-in-out;
+}
+
+.game-description {
+	line-height: 0px;
+
+	display: flex;
+	vertical-align: center;
+	justify-content: center;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+}
+.googlePlay {
+	width: 15vw;
+	height: 12vh;
+
+	padding-top: 0px;
+	margin: 0px;
+}
+.appleAppStore {
+	width: 12vw;
+	height: 10vh;
+
+	padding-top: 1vh;
+	margin: 0px;
+}
+.itchio {
+	width: 12vw;
+	height: 8vh;
+
+	margin-top: 2vh;
+	margin-right: 2vw;
+	margin-left: 1vw;
+}
+
+.platformIndicators {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	vertical-align: center;
+
+	line-height: 0px;
+	margin-top: -2vh;
+	margin-right: 2vw;
+}
+.mobile {
+	color: rgba(225, 225, 225, 0.75);
+
+	width: 75%;
+}
+.desktop {
+	color: rgba(225, 225, 225, 0.75);
+
+	width: 25%;
+
+	margin-right: 1.25vw;
+}

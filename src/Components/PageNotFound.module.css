@@ -1,0 +1,69 @@
+.row-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+
+	/* position: absolute;
+	margin: 0;
+	top: 50%;
+	transform: translateY(-50%); */
+
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+.errorText {
+	float: left;
+	width: 50%;
+
+	padding: 5vw;
+}
+.duckImage {
+	height: auto;
+	width: auto;
+	max-height: 24%;
+	max-width: 24%;
+
+	float: right;
+	padding-right: 5vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.errorTitle {
+	font-size: calc(10px + 3vw);
+	color: white;
+
+	margin-bottom: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+	transition: all 0.25s ease-in-out;
+}
+.errorTitle:hover {
+	font-size: calc(10px + 3vw);
+	color: red;
+
+	margin-bottom: 10px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+	animation: errorColorChange 2s infinite 0.75s;
+
+	transition: all 0.25s ease-in-out;
+}
+.errorDescription {
+	color: rgba(225, 225, 225, 0.75);
+
+	margin-top: 0px;
+}
+
+.backToHomeButton {
+	width: 50%;
+}
+
+@keyframes errorColorChange {
+	0% { color: red }
+	50% { color: lightcoral }
+	100% { color: red }
+}

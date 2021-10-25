@@ -1,0 +1,21 @@
+{
+	"recommendations": [
+		"esbenp.prettier-vscode",
+		"wix.vscode-import-cost",
+		"skyran.js-jsx-snippets",
+		"xabikos.javascriptsnippets",
+		"dennisvhest.npm-browser",
+		"christian-kohler.path-intellisense",
+		"alefragnani.project-manager",
+		"alefragnani.bookmarks",
+		"ms-vsliveshare.vsliveshare",
+		"eg2.vscode-npm-script",
+		"christian-kohler.npm-intellisense",
+		"icrawl.discord-vscode",
+		"visualstudioexptteam.vscodeintellicode",
+		"angelorafael.jsx-html-tags",
+		"mutantdino.resourcemonitor",
+		"christopherstyles.html-entities",
+		"dbaeumer.vscode-eslint"
+	]
+}
