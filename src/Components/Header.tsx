@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 import styles from './Header.module.css';
 
-function Navigation(props) {
+function Navigation() {
 	var path = window.location.pathname;
 	var page = path.split('/').pop();
 
@@ -24,27 +24,26 @@ function Navigation(props) {
 	return (
 		<div className="navigation">
 			<header className={styles['App-header']}>
-				<Link className={styles[gamesClassName]} to="/games">
+				{/* <Link className={styles[gamesClassName]} to="/games">
 					Games
 				</Link>
 				<Link className={styles[musicClassName]} to="/music">
 					Music
-				</Link>
+				</Link> */}
 
 				<Link
-					exact={true}
 					className={`${styles[homeClassName]} ${styles['big-text']}`}
 					to="/"
 				>
-					A Duck&apos;s Quack
+					enter the infinite space
 				</Link>
 
-				<Link className={styles[reviewsClassName]} to="/reviews">
+				{/* <Link className={styles[reviewsClassName]} to="/reviews">
 					Reviews
 				</Link>
 				<Link className={styles[podcastsClassName]} to="/podcasts">
 					Podcasts
-				</Link>
+				</Link> */}
 			</header>
 		</div>
 	);

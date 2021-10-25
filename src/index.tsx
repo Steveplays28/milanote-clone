@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
+//import reportWebVitals from './reportWebVitals';
 
 import { AppWithRouter, BackToTopButtonWithRouter } from './App';
 import { Header, Footer, BackButton } from './Components';

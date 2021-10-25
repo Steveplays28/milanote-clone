@@ -5,6 +5,8 @@ export { default as BackButton } from './BackButton';
 export { default as Home } from './Home';
 export { default as Contact } from './Contact';
 
+export { default as Canvas } from './Canvas';
+
 export { default as Games } from './Games';
 export { default as Music } from './Music';
 

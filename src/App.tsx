@@ -8,11 +8,11 @@ import {
 	useLocation,
 } from 'react-router-dom';
 
-import ScrollToTop from './Components/ScrollToTop.js';
+import ScrollToTop from './Components/ScrollToTop';
 
 import {
 	PageNotFound,
-	Home,
+	Canvas,
 	Contact,
 	Games,
 	Music,
@@ -29,7 +29,7 @@ function App() {
 		<div className="App">
 			<ScrollToTop>
 				<Switch>
-					<Route path="/" exact component={() => <Home />} />
+					<Route path="/" exact component={() => <Canvas />} />
 					<Route path="/Contact" exact component={() => <Contact />} />
 
 					<Route path="/Games" exact component={() => <Games />} />
