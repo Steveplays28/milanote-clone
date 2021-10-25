@@ -1,5 +1,6 @@
-# A Duck's Quack website
-:D
+# Milanote clone
+Yes, this is a Milanote clone :)
+
 
 # Getting started with React
 
