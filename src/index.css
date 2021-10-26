@@ -16,6 +16,9 @@
 
 	--tooltip-background-color: #282c34;
 	--tooltip-text-color: var(--secondary-text-color);
+
+
+	--grid-size: 32px;
 }
 /* #endregion */
 
@@ -24,9 +27,15 @@ html {
 	background-color: #181a1f;
 	color: white;
 
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
 	scroll-behavior: smooth;
 }
 body {
+	width: 100%;
+	height: 100%;
 	margin: 0;
 
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -54,7 +63,7 @@ code {
 .coolText {
 	background-color: var(--blue-color-1);
 
-	font-size: calc(10px + 1.1vw);
+	font-size: var(--grid-size * 1);
 	text-align: center;
 
 	width: fit-content;

@@ -1,2 +1,37 @@
 .canvas {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+
+	color: white;
+
+	position: absolute;
+	width: 100%;
+	height: calc(100% - (var(--grid-size) * 5.5));
+	margin: auto;
+
+	background-size: var(--grid-size) var(--grid-size);
+	background-image: linear-gradient(to right, grey 1px, transparent 1px),
+		linear-gradient(to bottom, grey 1px, transparent 1px);
+
+	user-select: none;
+
+	/* text-align: center; */
+}
+
+.centerIndicator {
+	background-color: white;
+
+	width: calc(var(--grid-size) / 2);
+	height: calc(var(--grid-size) / 2);
+
+	position: fixed;
+	top: calc(50% - (var(--grid-size) * 0.5));
+	right: calc(50% - calc(var(--grid-size) / 4));
+
+	justify-content: center;
+	vertical-align: center;
+
+	border-radius: 50%;
 }
