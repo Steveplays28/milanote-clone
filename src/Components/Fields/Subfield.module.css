@@ -1,0 +1,6 @@
+.subfield {
+	padding-left: var(--pad-left);
+	border: var(--clr-primary) 2px solid;
+	border-radius: 10px;
+	overflow: hidden;
+}

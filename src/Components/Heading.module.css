@@ -1,0 +1,9 @@
+.heading {
+	min-width: 200px;
+	max-width: min-content;
+	background-color: var(--clr-background);
+	border: none;
+	margin-top: 0;
+	color: var(--clr-primary);
+	font-size: 2rem;
+}

@@ -1,0 +1,19 @@
+:root {
+	--clr-primary: #98e8eb;
+	--clr-background: #282c34;
+	--pad-left: 0.2em;
+}
+
+.field {
+	background: var(--clr-background);
+	min-width: 200px;
+	max-width: max-content;
+	padding: var(--pad-left);
+	border-radius: 10px;
+	border: var(--clr-primary) 2px solid;
+}
+
+.subfields {
+	list-style-type: none;
+	padding-left: var(--pad-left);
+}
