@@ -19,7 +19,9 @@ export default function Text(props: TextSubfield) {
 	return (
 		<div className={styles['subfield']}>
 			<Heading val={props.heading} />
-			<p>{props.body}</p>
+			<textarea className={styles['subfield__text__body']}>
+				{props.body}
+			</textarea>
 		</div>
 	);
 }
