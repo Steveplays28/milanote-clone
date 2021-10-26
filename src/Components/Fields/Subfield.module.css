@@ -4,3 +4,13 @@
 	border-radius: 10px;
 	overflow: hidden;
 }
+
+/*#################*/
+/*# Text-Subfield #*/
+/*#################*/
+.subfield__text__body {
+	width: 100%;
+	background-color: var(--clr-background);
+	border: none;
+	resize: none;
+}

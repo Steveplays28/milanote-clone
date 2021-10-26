@@ -4,16 +4,19 @@ import React, { useRef, useState } from 'react';
 import styles from './Field.module.css';
 import Text from './Text';
 import { Subfield } from './Subfield';
+import AddSubfieldButton from './AddSubfieldButton';
 
-export default function Field() {
-	const [subfields, setSubfields]: [
-		Subfield[],
-		React.Dispatch<React.SetStateAction<Subfield[]>>
-	] = useState([new Subfield({ type: 'TEXT', heading: 'HEAD', body: 'body' })]);
+export interface FieldData {
+	key: number;
+}
+
+export default function Field(props: { key: number }) {
+	const tmp: Subfield[] = [];
+	const [subfields, setSubfields] = useState(tmp);
 
 	return (
 		<div className={styles['field']}>
-			<Heading val="Heading" />
+			<Heading val="" />
 			<ul className={styles['subfields']}>
 				{subfields.map((e, i) => {
 					if (e.type == 'TEXT' && e.body)
@@ -27,6 +30,9 @@ export default function Field() {
 						);
 				})}
 			</ul>
+			<AddSubfieldButton
+				subfieldsState={[subfields, setSubfields]}
+			></AddSubfieldButton>
 		</div>
 	);
 }
