@@ -10,28 +10,45 @@ export interface FieldData {
 	key: number;
 }
 
+export type SubfieldStateType = [
+	Subfield[],
+	React.Dispatch<React.SetStateAction<Subfield[]>>
+];
+
 export default function Field(props: { key: number }) {
 	const tmp: Subfield[] = [];
-	const [subfields, setSubfields] = useState(tmp);
+	const subfieldState: SubfieldStateType = useState(tmp);
+	const [subfields, setSubfields] = subfieldState;
 
+	const addSubfieldButtonDOM = useRef(null);
 	return (
 		<div className={styles['field']}>
 			<Heading val="" />
 			<ul className={styles['subfields']}>
 				{subfields.map((e, i) => {
-					if (e.type == 'TEXT' && e.body)
+					console.log(`Here ${i}`);
+					e.key = i;
+
+					const ref = useRef(null);
+
+					if (e.type == 'TEXT')
 						return (
 							<Text
-								heading={e.heading}
-								body={e.body}
-								type="TEXT"
-								key={i}
+								ref={addSubfieldButtonDOM}
+								subfield={{
+									type: 'TEXT',
+									heading: e.heading,
+									body: e.body || '',
+								}}
+								subfieldState={subfieldState}
+								id={i}
 							></Text>
 						);
 				})}
 			</ul>
 			<AddSubfieldButton
-				subfieldsState={[subfields, setSubfields]}
+				subfieldsState={subfieldState}
+				ref={addSubfieldButtonDOM}
 			></AddSubfieldButton>
 		</div>
 	);

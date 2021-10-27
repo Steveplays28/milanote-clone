@@ -11,6 +11,8 @@
 	padding: var(--pad-left);
 	border-radius: 10px;
 	border: var(--clr-primary) 2px solid;
+
+	position: relative;
 }
 
 .subfields {
