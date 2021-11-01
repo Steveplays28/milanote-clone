@@ -1,19 +1,24 @@
+import FieldContainer from 'Components/Fields/FieldContainer';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 //import reportWebVitals from './reportWebVitals';
 
 import { AppWithRouter, BackToTopButtonWithRouter } from './App';
-import { Header, Footer, BackButton } from './Components';
+import { Header, Footer, BackButton, ContextMenu } from './Components';
 
 import './index.css';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
+			<ContextMenu />
+
 			<Header />
 
 			<AppWithRouter />
+
+			<FieldContainer></FieldContainer>
 
 			<Footer />
 

@@ -16,6 +16,7 @@
 
 	user-select: none;
 
+	z-index: -1;
 	/* text-align: center; */
 }
 

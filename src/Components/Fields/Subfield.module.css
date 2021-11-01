@@ -1,0 +1,16 @@
+.subfield {
+	padding-left: var(--pad-left);
+	border: var(--clr-primary) 2px solid;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+/*#################*/
+/*# Text-Subfield #*/
+/*#################*/
+.subfield__text__body {
+	width: 100%;
+	background-color: var(--clr-background);
+	border: none;
+	resize: none;
+}

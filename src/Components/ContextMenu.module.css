@@ -1,0 +1,14 @@
+.contextMenu {
+	background-color: black;
+	color: white;
+	font-size: 1vw;
+
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: auto;
+	height: auto;
+
+	user-select: none;
+	z-index: 999;
+}
