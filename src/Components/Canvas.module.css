@@ -1,8 +1,7 @@
 .canvas {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	color: white;
 
@@ -26,12 +25,12 @@
 	width: calc(var(--grid-size) / 2);
 	height: calc(var(--grid-size) / 2);
 
-	position: fixed;
+	/* position: fixed;
 	top: calc(50% - (var(--grid-size) * 0.5));
-	right: calc(50% - calc(var(--grid-size) / 4));
+	right: calc(50% - calc(var(--grid-size) / 4)); */
 
-	justify-content: center;
-	vertical-align: center;
+	/* justify-content: center;
+	vertical-align: center; */
 
 	border-radius: 50%;
 }

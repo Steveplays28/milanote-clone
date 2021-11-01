@@ -7,6 +7,13 @@ import styles from './Canvas.module.css';
 import '../index.css';
 
 function Canvas() {
+	const setCoordinates = (x: number, y: number, snapToGrid: boolean) => {
+		//TODO: snap to grid
+		return `position:absolute;   
+				left: ${snapToGrid ? x.toFixed(0) : x.toFixed(0)}px;         
+				top: ${snapToGrid ? y.toFixed(0) : y.toFixed(0)}px;`;
+	};
+
 	return (
 		<div className={styles.canvas}>
 			<Helmet>
@@ -26,7 +33,7 @@ function Canvas() {
 				<meta name="keywords" content="Milanote, note, notes" />
 			</Helmet>
 
-			<p className={styles.centerIndicator}></p>
+			<div className={styles.centerIndicator} />
 		</div>
 	);
 }
