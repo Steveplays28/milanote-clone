@@ -1,6 +1,8 @@
 # Milanote clone
 Yes, this is a Milanote clone :)
 
+(ABANDONED, this was just a fun little experiment, and nowhere near finished)
+
 
 # Getting started with React
 
